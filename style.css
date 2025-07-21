@@ -1,0 +1,134 @@
+/* Poppins Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*  Primary Styles */
+
+.small-text-p{
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(58, 58, 58) ;
+}
+.btn{
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 24px;
+    color: rgb(255, 255, 255);
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    border: none;
+    cursor: pointer;
+}
+/* Nav Section Style */
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 490px;  
+    margin-top: 50px;
+}
+.nav ul {
+    display: flex;
+    gap: 34px;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a {
+    text-decoration: none;  
+    cursor: pointer;
+}
+.nav-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+/* Nav Section Style End */
+
+/* Banner Section Style Start*/
+
+.banner{
+    margin-top: 50px;
+    
+}
+.banner-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 133px;
+    
+    
+}
+.banner-content{
+    width: 582px;;
+}
+.banner-title{
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.banner-img img{
+    width: 440px;
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+/* Banner Section End Here */
+
+/* Logo Section Style Start Here */
+.logo{
+    margin: 0 auto;
+    align-items: center;
+    width: 1110px;
+    border: 1px solid black;
+    margin-top: 69px;
+}
+.all-logo{
+    display: flex;
+    gap: 60px;
+    padding: 35px 60px;
+    justify-content: center;
+    
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;    
+    }
+    .nav ul{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+    }
+    .logo{
+        width: 100%;
+        border: none;
+    }
+    .all-logo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+    .all-logo img{
+        width: 100%;
+    }
+}
