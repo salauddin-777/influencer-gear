@@ -105,7 +105,7 @@
 /* Card Style Section */
 .card{
     max-width: 1047px;
-    max-height: 1662px;
+    /* max-height: 1662px; */
     margin: 0 auto;
     padding-right:20px ;
     
@@ -158,6 +158,62 @@
     font-size: 0.9rem;
     margin: 0;
 }
+.card a {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    gap: 5px;
+    align-items: center;
+}
+
+/* Feature Section Style */
+.feature{
+    width: 1110px;
+    margin: 100px auto;
+}
+.feature-container{
+    display: flex;
+    gap: 96px;
+    justify-content: center;
+}
+.feature-title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.feature-des{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(108, 108, 108);
+    width: 510px;
+}
+
+/* Footer Section style */
+.footer{
+    text-align: center;
+    margin: 0 auto;
+    width: 1440px;
+    background-color: rgb(10, 8, 38) ;
+    color: rgb(255, 255, 255);
+    padding: 40px 0px;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 1.5rem ;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+}
+.footer-second{
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 5px;
+    color: rgb(217, 219, 225);
+}
+
 
 @media screen and (max-width: 576px) {
     .nav{
@@ -186,5 +242,32 @@
     }
     .all-logo img{
         width: 100%;
+    }
+    .main-card{
+        grid-template-columns: 1fr;
+        margin: 30px auto; 
+    }
+    .card{
+        align-items: center;
+    }
+    .card a{
+        justify-content: center;
+    }
+    .feature-container{
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .feature{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .feature-des{
+        width: 100%;
+
+    }
+    .feature-img img{
+        width: 90%;
     }
 }
